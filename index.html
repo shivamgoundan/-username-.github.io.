@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CYBERSHOP</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=uTF-8"/>
+			
+			<link href="stylesheet" type="text/css"/>
+
+
+
+	<style>
+			/* Navigation Styling */
+			.navbar {
+			  display: flex;
+			  justify-content: space-between;
+			  align-items: center;
+			  background-color: #f2f2f2;
+		   
+			   position: fixed; /* or absolute */
+			  top: 0;
+			  left: 0;
+			  width: 100%;
+			  z-index: 1; /* higher than any other content on the page */
+			}
+
+			.navbar a {
+			  color: #000;
+			  text-decoration: none;
+			  margin-right: 20px;
+			}
+
+			.navbar a:hover {
+			  color: #ffa500;
+			}
+			a.navbutton{
+	font-family: arial;
+	font-size: 1.25em;
+	font-weight: bold;
+	padding-top: 12px;
+	text-decoration: black;
+	width: 200px;
+	height: 40px;
+	border: solid 1px Black;
+	text-align: center; 
+	display:block;
+	color: #000000 ;
+	background-color: #d3d3d3;
+	background-repeat: no-repeat;
+	margin-right: 5px;}
+
+a.navbutton:hover {
+background-color:#ffa500 ;
+color: black;)
+    }
+	
+			.search-input {
+			  border: 1px solid #ccc;
+			  padding: 5px;
+			  border-radius: 3px;
+			}
+			.search-button {
+			  background-color: #4CAF50; /* Green */
+			  color: white;
+			  padding: 5px 10px;
+			  border: none;
+			  border-radius: 3px;
+			  cursor: pointer;
+			}
+			.search-button:hover {
+			  background-color: #3e8e41;
+			}
+	
+		table{
+		width: 100%;
+		text-align: center; 
+		cellpadding: 0px;
+		cellspacing:0px;
+		
+		}
+		strong{
+		
+		font-size:25px;
+		
+		
+		}
+		
+		.container1{
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: 1.5em;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+td:hover{
+background-color: #D3D3D3;
+color: red;
+
+} 
+h1{
+	
+	text-align: center;
+
+}
+body{
+		background-color: #E8E8E8 ;
+
+}
+logo{
+
+margin-left: 20px;
+
+}
+footer {
+  background-color: #121315;
+  color: #a7a7a7;
+  font-size: 12px;
+  height: 50px;
+  width: 100%;
+}
+footer * {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+.row {
+  padding: 1em 1em;
+}
+.row.primary {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  align-items: stretch;
+   height: 150px;
+  width: 100%;
+}
+.column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2em;
+  min-height: 15em;
+}
+h3 {
+  width: 100%;
+  text-align: left;
+  color: white;
+  font-size: 1.4em;
+  white-space: nowrap;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+li:not(:first-child) {
+  margin-top: 0.8em;
+}
+ul li a {
+  color: #a7a7a7;
+  text-decoration: none;
+}
+ul li a:hover {
+  color: #2a8ded;
+}
+.about p {
+  text-align: justify;
+  line-height: 2;
+  margin: 0;
+}
+input,
+button {
+  font-size: 1em;
+  padding: 1em;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+button {
+  background-color: #4CAF50;
+  color: #ffffff;
+}
+section.social {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2.4em;
+  flex-direction: row;
+  margin-top: 0.5em;
+}
+.social i {
+  color: #bac6d9;
+}
+
+.copyright {
+  padding: 0.3em 1em;
+  background-color: #25262e;
+}
+.footer-menu{
+  float: left;
+    margin-top: 10px;
+}
+
+.footer-menu a{
+  color: #cfd2d6;
+  padding: 6px;
+
+  text-decoration: none;
+}
+.footer-menu a:hover{
+  color: #27bcda;
+}
+.copyright p {
+  font-size: 0.9em;
+  text-align: right;
+}
+@media screen and (max-width: 850px) {
+  .row.primary {
+    grid-template-columns: 1fr;
+  }
+  }
+
+
+  </style>
+		</head>
+
+		<body>
+		  <nav class="navbar">
+			<img src="images/logo1.png" class = "logo" alt="Logo" width="90" height="90">
+			<h1>CyberShop</h1>
+			<a href="#about" class="navbutton">Home</a>
+			<a href="#order"class="navbutton">About us</a>
+			<a href="#menu"class="navbutton">Account</a>
+			<a href="#signup" class="navbutton">Sign up</a>
+			<form>
+			
+				<input type="text" class="search-input" placeholder="Search...">
+				<button type="submit" class="search-button">Search</button>
+			</form>
+		  </nav>
+			<section class="container1">
+				  <img src="images/bg5.png" alt="Snow" style="width:100%;" height="180">
+				  <div class="bottom-right">"Upgrade your tech game with CyberShop"</div>
+			</section>			  
+		 
+		  	
+				<h1 >OUR BEST SELLING..!!</h1>
+				<table>
+					<tr>
+						<td><a href="#order"></a>
+							 Apple Products<br/>
+							<img src="images/apple.jpg" alt=" dish_1" width="160em" height="160em" /><br/>
+							<strong></strong>
+						</td>
+						<td><a href="#order"></a>
+							CeraVe Products<br/>
+							<img src="images/cerave.jpg" alt=" dish_2" width="160em" height="160em" /> <br/>
+							<strong></strong>
+						</td>
+						<td><a href="#order"></a>
+							 PS5 Reservation<br/>
+							 <img src="images/ps5.jpg" alt=" dish_3" width="160em" height="160em" /> <br/>
+							 <strong></strong>
+						</td>
+						<td><a href="#order"></a>
+							 PSN USA Gift Cards<br/>
+							 <img src="images/psn.jpg" alt=" dish_3" width="160em" height="160em" /> <br/>
+							 <strong></strong>
+						</td>
+						<td><a href="#order"></a>
+							 XBOX<br/>
+							 <img src="images/xbox.jpg" alt=" dish_3" width="160em" height="160em" /> <br/>
+							<strong></strong>
+						</td>
+						<td><a href="#order"></a>
+							  Google Gift Cards<br/>
+							 <img src="images/google.jpg" alt=" dish_3" width="150em" height="150em" /> <br/>
+							 <strong></strong>
+						</td>
+					</tr>
+				</table>
+				
+				<footer>
+
+   <p>Copyright &copy;  2021  CyberShop Ltd. All rights reserved.</p>
+
+</footer>
+					
+			
+     
+				</body>
+</html>
+
+  
